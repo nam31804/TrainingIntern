@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký khách hàng</title>
+</head>
+<body>
+    <h2>Đăng ký khách hàng</h2>
+
+    Họ tên: <input type="text" id="fullname"> <span id="err_name"></span><br><br>
+    Email: <input type="text" id="email"> <span id="err_email"></span><br><br>
+    Số điện thoại: <input type="text" id="phone"> <span id="err_phone"></span><br><br>
+
+    <button onclick="validateCustomer()">Đăng ký</button>
+
+    <p id="result"></p>
+
+    <script>
+        function validateCustomer() {
+            var fullname = document.getElementById("fullname").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+
+            var valid = true;
+
+            document.getElementById("err_name").innerText = "";
+            document.getElementById("err_email").innerText = "";
+            document.getElementById("err_phone").innerText = "";
+            document.getElementById("result").innerText = "";
+
+            if (fullname == "") {
+                document.getElementById("err_name").innerText = "Nhập họ tên!";
+                valid = false;
+            }
+            if (email == "") {
+                document.getElementById("err_email").innerText = "Nhập email!";
+                valid = false;
+            }
+            if (phone == "") {
+                document.getElementById("err_phone").innerText = "Nhập số điện thoại!";
+                valid = false;
+            }
+
+            if (valid == true) {
+                document.getElementById("result").innerText = "Đăng ký thành công!";
+            }
+        }
+    </script>
+</body>
+</html>

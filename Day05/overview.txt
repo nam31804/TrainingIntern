@@ -1,0 +1,86 @@
+* Nhúng css
+    - style inline <span style="color:#f1f0ac"> noi dung </span>
+    - tag style: áp dụng trên 1 trang html
+    - file style: 
+
+* Cú pháp tương tác:
+    - Tương tác thông qua phần tử html: body, h1, .. p, ..div, ...
+    - Tương tác thông qua thuộc tính id: <section id="zone1"> ...
+    - Tương tác thông qua thuộc tính class: <div class="box"> .....</div>
+    - Tương tác thông qua giá trị của thuộc tính:
+        input[type="text"] { .....}
+
+* Các bộ chọn:
+    - Bộ chọn phần tử: h1{....}
+        html, body { ....}
+    - Bộ chọn id: 
+        #zone1{....}
+    - Bộ chọn class:
+        .class-name {.....}
+    - Bộ chọn khác: 
+        tag01 tag02 {....} => div p {....}
+        tag01 + tag02 {....} => section + div {....}
+        tag01 > tag02 {....}
+        ....
+* Màu sắc:
+    - HEX: #abc123
+    - rgb, rgba: rgb(1,55,2); rgba(22,33,55,0.5)
+    - Hằng màu 
+
+* Đơn vị:
+    - % 
+    - px
+    - rem: 
+        html, body {font-size:16px}
+        p{
+            font-size: 1rem;
+        }
+    - em:
+        div{
+             font-size: 50px;
+        }
+
+        <div>
+            <h1> tieu de</h1>
+            <p> nooii dung </p>
+        </div>
+
+        p{
+            font-size: 1em; // font-size: 50px;
+        }
+        h1{
+            font-size: 1rem; // size: 16px
+        }
+
+* Quy tắc:
+    - Định vị phần tử:
+        + top, left, right, bottom,..
+        + width, height,... min-width, min-height, max-width, max-height,..
+        + margin: 10px 15px 10px 25px
+            top / right / bottom / left 
+            margin: x y; => top / bottom: x; left / right: y
+        + padding:
+             top / right / bottom / left 
+        + display: 
+            flex 
+
+        + position:
+            relative / absolute 
+        ....
+
+    - Khung:
+        + border: 
+            top / right / bottom / left 
+        + border-color:
+        + border-style:
+            ....
+        => border:1px solid #F0F0F0
+        => border-bottom:1px solid #F0F0F0
+    - Nền:
+        + background:
+    - Mầu:
+        + color:
+
+        ....
+
+        

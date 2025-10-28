@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thêm sản phẩm</title>
+</head>
+<body>
+    <h2>Thêm sản phẩm</h2>
+
+    Tên SP: <input type="text" id="p_name"> <span id="err_pname"></span><br><br>
+    Giá: <input type="number" id="price"> <span id="err_price"></span><br><br>
+    Số lượng: <input type="number" id="quantity"> <span id="err_quantity"></span><br><br>
+
+    <button onclick="validateProduct()">Lưu</button>
+
+    <p id="p_result"></p>
+
+    <script>
+        function validateProduct() {
+            var p_name = document.getElementById("p_name").value;
+            var price = document.getElementById("price").value;
+            var qty = document.getElementById("quantity").value;
+
+            var valid = true;
+
+            document.getElementById("err_pname").innerText = "";
+            document.getElementById("err_price").innerText = "";
+            document.getElementById("err_quantity").innerText = "";
+            document.getElementById("p_result").innerText = "";
+
+            if (p_name == "") {
+                document.getElementById("err_pname").innerText = "Nhập tên SP!";
+                valid = false;
+            }
+            if (price == "" || price <= 0) {
+                document.getElementById("err_price").innerText = "Giá > 0!";
+                valid = false;
+            }
+            if (qty == "" || qty <= 0) {
+                document.getElementById("err_quantity").innerText = "SL > 0!";
+                valid = false;
+            }
+
+            if (valid == true) {
+                document.getElementById("p_result").innerText = "Thêm sản phẩm thành công!";
+            }
+        }
+    </script>
+</body>
+</html>
