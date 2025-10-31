@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+h2 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+  margin-top: 40px;
+}
+
+a {
+  font-size: 14px;
+  color: blue;
+}
+
+.list {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.item {
+  width: 220px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.price-old {
+  text-decoration: line-through;
+  font-size: 13px;
+  color: #aaa;
+}
+
+.price {
+  color: #000;
+  font-weight: bold;
+}

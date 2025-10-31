@@ -1,0 +1,64 @@
+{
+  "PhongKhach": [
+    {
+      "name": "Bàn uống nước",
+      "oldPrice": "3.500.000 VNĐ",
+      "price": "2.990.000 VNĐ",
+      "img": "img/ban-nuoc.jpg"
+    },
+    {
+      "name": "Kệ TV",
+      "oldPrice": "5.200.000 VNĐ",
+      "price": "4.560.000 VNĐ",
+      "img": "img/ke-tv.jpg"
+    },
+    {
+      "name": "Kệ đồ",
+      "oldPrice": "6.000.000 VNĐ",
+      "price": "4.990.000 VNĐ",
+      "img": "img/ke-do.jpg"
+    },
+    {
+      "name": "SOFA",
+      "oldPrice": "10.000.000 VNĐ",
+      "price": "8.400.000 VNĐ",
+      "img": "img/sofa.jpg"
+    }
+  ],
+
+  "PhongBep": [
+    {
+      "name": "Bàn ăn",
+      "oldPrice": "13.000.000 VNĐ",
+      "price": "10.550.000 VNĐ",
+      "img": "img/ban-an.jpg"
+    },
+    {
+      "name": "Bàn trà",
+      "oldPrice": "4.000.000 VNĐ",
+      "price": "3.600.000 VNĐ",
+      "img": "img/ban-tra.jpg"
+    }
+  ],
+
+  "PhongNgu": [
+    {
+      "name": "Giường gỗ",
+      "oldPrice": "5.000.000 VNĐ",
+      "price": "4.000.000 VNĐ",
+      "img": "img/giuong-go.jpg"
+    },
+    {
+      "name": "Tủ quần áo",
+      "oldPrice": "14.000.000 VNĐ",
+      "price": "11.200.000 VNĐ",
+      "img": "img/tu-quan-ao.jpg"
+    },
+    {
+      "name": "Giường châu Âu",
+      "oldPrice": "11.000.000 VNĐ",
+      "price": "8.999.000 VNĐ",
+      "img": "img/giuong-chau-au.jpg"
+    }
+  ]
+}
